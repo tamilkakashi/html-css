@@ -294,4 +294,37 @@ aside {
     font-weight: bold;
     color: #333;
 }
+/* Set maximum width for images in content */
+.content-with-image img,
+aside ul li img {
+    max-width: 100%;
+    height: auto;
+}
 
+/* Adjust padding and font size for smaller devices */
+@media (max-width: 768px) {
+    header .logo h1 {
+        font-size: 1.8rem;
+    }
+    header .logo p {
+        font-size: 1rem;
+    }
+    nav ul {
+        flex-direction: column;
+        padding: 0;
+    }
+    nav ul li {
+        margin: 10px 0;
+    }
+    aside h3 {
+        font-size: 1.5rem;
+    }
+    aside ul li {
+        display: flex;
+        align-items: center;
+    }
+    aside ul li img {
+        max-width: 50px;
+        margin-right: 10px;
+    }
+}
